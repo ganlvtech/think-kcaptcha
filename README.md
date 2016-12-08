@@ -38,7 +38,7 @@ $this->validate($data,[
 
 ```php
 if(!captcha_check($captcha)){
- //验证失败
+    //验证失败
 };
 ```
 
@@ -77,7 +77,7 @@ if(!captcha_check($captcha)){
     // 【KCAPTCHA专用】下方是否显示credits（开启会在高度方向额外增加12px）（注：credit表示对原作者及其他有贡献者的谢启、及鸣谢者姓名）
     'show_credits' => true,
     // 【KCAPTCHA专用】credits内容（如果为空，则显示HTTP_HOST）
-    'credits' => 'www.eeyes.net',
+    'credits' => 'www.captcha.ru',
     // 【KCAPTCHA专用】验证码文字颜色
     'foreground_color' => [mt_rand(0, 80), mt_rand(0, 80), mt_rand(0, 80)],
     // 【KCAPTCHA专用】验证码背景颜色
