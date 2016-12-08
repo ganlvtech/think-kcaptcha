@@ -1,0 +1,22 @@
+{
+    "name": "ganlvtech/think-kcaptcha",
+    "description": "KCAPTCHA for thinkphp5",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "ganlv",
+            "email": "ganlvtech@qq.com"
+        }
+    ],
+    "require": {
+        "ganlvtech/kcaptcha": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "think\\captcha\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    }
+}
