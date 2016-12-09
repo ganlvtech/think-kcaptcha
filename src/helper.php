@@ -29,7 +29,9 @@ if (!function_exists('captcha_src')) {
      */
     function captcha_src($id = '')
     {
-        return \think\Url::build('/captcha' . ($id ? "/{$id}" : ''));
+        return \think\Url::build('\think\captcha\KCaptchaController@index', [
+            'id' => $id,
+        ]);
     }
 }
 if (!function_exists('captcha_img')) {
